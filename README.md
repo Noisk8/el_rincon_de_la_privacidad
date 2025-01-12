@@ -44,13 +44,17 @@ src/
 │   │   ├── Hero.tsx
 │   │   ├── LatestEpisodes.tsx
 │   │   └── Stats.tsx
-│   └── shared/
-│       ├── Button.tsx
-│       └── Card.tsx
+│   ├── shared/
+│   │   ├── CustomButton.tsx
+│   │   └── CustomCard.tsx
+│   ├── ClaimPoap.tsx
+│   ├── CalendarComponent.tsx
+│   └── Poaps.tsx
 ├── styles/
 │   └── globals.css
 ├── types/
 ├── utils/
+│   └── utils.ts
 └── context/
     └── ThemeContext.tsx
 ```
