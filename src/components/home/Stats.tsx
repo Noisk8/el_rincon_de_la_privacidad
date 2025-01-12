@@ -4,14 +4,16 @@ import CountUp from 'react-countup';
 import MovieIcon from '@mui/icons-material/Movie';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import PersonIcon from '@mui/icons-material/Person';
+import LocalOfferIcon from '@mui/icons-material/LocalOffer'; // Importa el nuevo icono
 
 interface ImpactMetricsProps {
     episodes: number;
     views: number;
-    guests: number; // Add guests to the props
+    guests: number; 
+    poaps: number;
 }
 
-const Stats = ({ episodes, views, guests }: ImpactMetricsProps) => {
+const Stats = ({ episodes, views, guests, poaps }: ImpactMetricsProps) => {
     const theme = useTheme();
 
     const metrics = [
@@ -22,21 +24,28 @@ const Stats = ({ episodes, views, guests }: ImpactMetricsProps) => {
             suffix: ''
         },
         {
-            icon: <VisibilityIcon sx={{ fontSize: 60, color: '#14b254' }} />,
+            icon: <VisibilityIcon sx={{ fontSize: 60, color: '#14e76f' }} />,
             value: views,
             label: 'Visualizaciones',
             suffix: 'K'
         },
         {
-            icon: <PersonIcon sx={{ fontSize: 60, color: '#14a1e6' }} />,
+            icon: <PersonIcon sx={{ fontSize: 60, color: '#14e76f' }} />,
             value: guests,
             label: 'Invitados',
+            suffix: ''
+        },
+        {
+            icon: <LocalOfferIcon sx={{ fontSize: 60, color: '#14e76f' }} />, // Usa el nuevo icono
+            value: poaps,
+            label: 'Poaps Repartidos',
             suffix: ''
         }
     ];
 
     return (
-        <Box sx={{ textAlign: 'center', pt: 8 }}>
+        <Box sx={{ textAlign: 'center', pt: 8,  backgroundColor: theme.palette.background.default 
+         }}>
             <Typography variant="h2" gutterBottom sx={{ color: '#14e76f', fontWeight: 'bold' }}>
                 Impacto en episodios
             </Typography>
@@ -95,7 +104,7 @@ const Stats = ({ episodes, views, guests }: ImpactMetricsProps) => {
                                     variant="subtitle1"
                                     sx={{
                                         color: '#14e76f',
-                                        mt: 1
+                                        mt: 2,
                                     }}
                                 >
                                     {metric.label}
