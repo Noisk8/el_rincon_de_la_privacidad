@@ -25,10 +25,15 @@ src/
 │   ├── layout.tsx
 │   ├── page.tsx (Home)
 │   ├── about/
+│   │   └── page.tsx
 │   ├── calendar/
+│   │   └── page.tsx
 │   ├── poaps/
+│   │   └── page.tsx
 │   ├── team/
+│   │   └── page.tsx
 │   └── episodes/
+│       └── page.tsx
 ├── components/
 │   ├── layout/
 │   │   ├── Header.tsx
@@ -58,7 +63,6 @@ src/
 - Calendario de eventos interactivo
 - Galería de POAPs
 - Sección de episodios
-- Integración con Nym VPN
 
 ## 📄 Páginas
 
@@ -113,17 +117,5 @@ Las contribuciones son bienvenidas. Por favor:
 4. Push a la rama (`git push origin feature/AmazingFeature`)
 5. Abre un Pull Request
 
-## 📝 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
 
 
-
-## Paleta de colores 
-
-| Color   |  Hexadecimal |
-|---------|--------------|
-| Verde 1 | **14e76f**   |
-| Verde 2 | **4b254**    |
-| Verde 3 | **17c865**   |
-| Negro   | **222b2d**   |
