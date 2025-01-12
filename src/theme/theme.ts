@@ -39,8 +39,8 @@ export const lightTheme = createTheme({
       main: themeConfig.custom.secondary,
     },
     background: {
-      default: '#ffffff',
-      paper: '#f5f5f5',
+      default: '#222b2d',
+      paper: '#222b2d',
     },
   },
 });
@@ -57,7 +57,7 @@ export const darkTheme = createTheme({
     },
     background: {
       default: themeConfig.custom.dark,
-      paper: '#1a1a1a',
+      paper: '#222b2d',
     },
   },
 });

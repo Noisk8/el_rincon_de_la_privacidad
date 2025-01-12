@@ -46,9 +46,7 @@ const Stats = ({ episodes, views, guests, poaps }: ImpactMetricsProps) => {
     return (
         <Box sx={{ textAlign: 'center', pt: 8,  backgroundColor: theme.palette.background.default 
          }}>
-            <Typography variant="h2" gutterBottom sx={{ color: '#14e76f', fontWeight: 'bold' }}>
-                Impacto en episodios
-            </Typography>
+           <h1 className=' font-bold text-center text-4xl text-green-400'> Impacto de programa</h1>
             <Stack 
                 direction={{ xs: 'column', sm: 'row' }} 
                 spacing={6} 

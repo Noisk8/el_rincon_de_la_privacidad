@@ -9,7 +9,6 @@ import {
   Stack,
 } from "@mui/material";
 import Image from "next/image";
-import Link from "next/link";
 export default function Hero() {
   return (
     <Paper
@@ -26,6 +25,7 @@ export default function Hero() {
           display="flex"
           flexDirection={{ xs: "column", md: "row" }}
           alignItems="center"
+          paddingBottom={8}
         >
           {/* Contenedor principal que cambiará el orden en móvil */}
           <Box
@@ -92,6 +92,28 @@ export default function Hero() {
               spacing={2}
               sx={{ mt: 4, order: { xs: 4, md: 3 } }}
             >
+
+        
+              <Button
+                variant="contained"
+                color="primary"
+                size="large"
+                href="#/episodios"
+              >
+                Ver episodios
+              </Button>
+            
+
+              
+              <Button
+                variant="outlined"
+                color="primary"
+                size="large"
+                href="https://www.daoariwas.xyz/"
+              >
+                Sobre Nym
+              </Button>
+    
               {/* ... botones existentes ... */}
             </Stack>
 
@@ -101,7 +123,7 @@ export default function Hero() {
               sx={{
                 mt: 6,
                 display: "flex",
-                flexDirection: { xs: "column", sm: "row" ,      flexWrap: "wrap", },
+                flexDirection: { xs: "column", sm: "row", flexWrap: "wrap" },
                 gap: 4,
                 alignItems: { xs: "center", sm: "center" },
                 order: { xs: 5, md: 4 },
@@ -114,23 +136,23 @@ export default function Hero() {
                   textAlign: { xs: "center", sm: "left" },
                 }}
               >
-                En colaboración con:
+                En colaboración de:
               </Typography>
 
               <Stack
-  direction="row"
-  spacing={2}
-  alignItems="center"
-  width="100%"
-  sx={{
-    flexWrap: "wrap",
-    justifyContent: "center",
-    "@media (min-width:500px)": {
-      flexWrap: "nowrap",
-      justifyContent: "flex-start",
-    },
-  }}
->
+                direction="row"
+                spacing={2}
+                alignItems="center"
+                width="100%"
+                sx={{
+                  flexWrap: "wrap",
+                  justifyContent: "center",
+                  "@media (min-width:500px)": {
+                    flexWrap: "nowrap",
+                    justifyContent: "flex-start",
+                  },
+                }}
+              >
                 <Box sx={{ height: 40, width: 120 }}>
                   <Image
                     src="https://www.daoariwas.xyz/images/DAo_color.png"

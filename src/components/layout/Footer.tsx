@@ -56,7 +56,7 @@ export default function Footer() {
                         <Typography 
                             variant="h6" 
                             sx={{ 
-                                color: 'custom.primary',
+                                color: '#222b2d',
                                 fontWeight: 700,
                                 mb: 2
                             }}
@@ -65,7 +65,7 @@ export default function Footer() {
                         </Typography>
                         <Typography 
                             variant="body2" 
-                            color="text.secondary"
+                            color="#222b2d"
                             sx={{ mb: 3 }}
                         >
                             Un espacio para hablar sobre privacidad en español, creado por la comunidad 
@@ -81,7 +81,7 @@ export default function Footer() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     sx={{ 
-                                        color: 'text.secondary',
+                                        color: '#222b2d',
                                         '&:hover': {
                                             color: 'custom.primary',
                                         },
@@ -99,7 +99,7 @@ export default function Footer() {
                         <Box flexBasis={{ xs: '100%', sm: '45%', md: '15%' }} key={section.title}>
                             <Typography
                                 variant="subtitle1"
-                                color="text.primary"
+                                color="#222b2d"
                                 gutterBottom
                                 sx={{ fontWeight: 'bold' }}
                             >
@@ -115,7 +115,7 @@ export default function Footer() {
                                         <Typography
                                             variant="body2"
                                             sx={{
-                                                color: 'text.secondary',
+                                                color: '#222b2d',
                                                 '&:hover': {
                                                     color: 'custom.primary',
                                                 },
@@ -132,8 +132,8 @@ export default function Footer() {
 
                 {/* Copyright */}
                 <Typography
-                    variant="body2"
-                    color="text.secondary"
+                    variant="h5"
+                    color="#222b2d"
                     align="center"
                     sx={{ mt: 8 }}
                 >

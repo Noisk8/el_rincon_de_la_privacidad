@@ -47,7 +47,7 @@ function ResponsiveAppBar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: '#222b2d',
               textDecoration: 'none',
             }}
           >
@@ -100,7 +100,7 @@ function ResponsiveAppBar() {
             variant="h5"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -108,7 +108,7 @@ function ResponsiveAppBar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: '#222b2d',
               textDecoration: 'none',
             }}
           >
@@ -120,7 +120,7 @@ function ResponsiveAppBar() {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                <Link href={`/${page.toLowerCase().replace(/ /g, '-')}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                <Link href={`/${page.toLowerCase().replace(/ /g, '-')}`} style={{ textDecoration: 'none', color: '#222b2d' }}>
                   {page}
                 </Link>
               </Button>

@@ -4,18 +4,21 @@
 
 :root {
   --background: #222b2d;
-  --foreground: #171717;
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #222b2d;
-    --foreground: #ededed;
+
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #222b2d !important;
+  min-height: 100vh;
 }
