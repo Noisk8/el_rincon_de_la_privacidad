@@ -1,5 +1,7 @@
+'use client'
 import Image from "next/image";
 import Hero from "../components/home/Hero";
+import Stats from "../components/home/Stats";
 
 export default function Home() {
   return (
@@ -9,7 +11,7 @@ export default function Home() {
       <Hero />
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
-       
+       <Stats episodes={14} views={1000} guests={8} />
        
         </div>
       </main>
