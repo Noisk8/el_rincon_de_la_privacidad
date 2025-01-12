@@ -9,7 +9,7 @@ interface LatestEpisodesProps {
 const LatestEpisodes = ({ playlistId }: LatestEpisodesProps) => {
     const videoOptions = {
         height: '390',
-        width: '640',
+        width: '440',
         playerVars: {
             listType: 'playlist',
             list: playlistId,
@@ -19,7 +19,7 @@ const LatestEpisodes = ({ playlistId }: LatestEpisodesProps) => {
 
     return (
         <div className="bg-background-default p-4 ">
-            <h1 className="text-green-400 mb-4 text-6xl font-bold text-center pt-8">Últimos Episodios</h1>
+            <h1 className="text-green-400 mb-4 text-4xl font-bold text-center pt-8">Últimos Episodios</h1>
             <div className="bg-card-background p-4 rounded-lg shadow-md">
                 <YouTube opts={videoOptions} />
             </div>
