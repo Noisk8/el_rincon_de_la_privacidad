@@ -1,93 +1,119 @@
-import React from "react";
-import { Avatar, Typography, Card, CardContent, Box } from "@mui/material";
+'use client'
+import React, { useState } from "react";
+import { Avatar, Typography, Card, CardContent, Box, Modal } from "@mui/material";
+import Image from "next/image";
 
 interface Poap {
   imageUrl: string;
   title: string;
   description: string;
+  url: string;
 }
 
 const poaps: Poap[] = [
   {
-    imageUrl: "/BWNym_logo.png",
-    title: "Gatito 1",
-    description: "Un gatito muy tierno.",
+    imageUrl: "/Poap1.png",
+    title: "Poap 1",
+    description: "📢 El rincón de la Privacidad - Axelar Network Español",
+    url: "https://example.com/poap1",
   },
   {
-    imageUrl: "/BWNym_logo.png",
-    title: "Gatito 2",
-    description: "Otro gatito adorable.",
+    imageUrl: "/Poap2.png",
+    title: "Poap 2",
+    description: "📢 Episodio 2! El rincón de la Privacidad - Llamada comunitaria en español",
+    url: "https://example.com/poap2",
   },
   {
-    imageUrl: "/BWNym_logo.png",
-    title: "Gatito 3",
-    description: "Un gatito juguetón.",
+    imageUrl: "/Poap3.png",
+    title: "Poap 3",
+    description: "📢 Episodio 3!: El rincón de la Privacidad - Conoce a Daniel",
+    url: "https://example.com/poap3",
   },
   {
-    imageUrl: "/BWNym_logo.png",
-    title: "Gatito 4",
-    description: "Un gatito dormilón.",
+    imageUrl: "/Poap4.png",
+    title: "Poap 4",
+    description: "📢 ¡Episodio 4!: El rincón de la Privacidad - Invitado: Erik Valle ",
+    url: "https://poap.gallery/drops/177010",
   },
   {
-    imageUrl: "/BWNym_logo.png",
-    title: "Gatito 5",
-    description: "Un gatito muy tierno.",
+    imageUrl: "/Poap5.png",
+    title: "Poap 5",
+    description: "📢 Episodio 5 El rincón de la Privacidad con MiCryptoMundo",
+    url: "https://poap.gallery/drops/177478",
   },
   {
-    imageUrl: "/BWNym_logo.png",
-    title: "Gatito 6",
-    description: "Otro gatito adorable.",
+    imageUrl: "/Poap6.png",
+    title: "Poap 6",
+    description: "📢 ¡Episodio 6!: El rincón de la Privacidad - Invitado: Yoditar",
+    url: "https://poap.gallery/drops/177956",
   },
   {
-    imageUrl: "/BWNym_logo.png",
-    title: "Gatito 7",
-    description: "Un gatito juguetón.",
+    imageUrl: "/Poap7.png",
+    title: "Poap 7",
+    description: "📢 ¡Episodio 7!: El rincón de la Privacidad - Invitada: @lucilajuliana",
+    url: "https://poap.gallery/drops/178401",
   },
   {
-    imageUrl: "/BWNym_logo.png",
-    title: "Gatito 8",
-    description: "Un gatito dormilón.",
+    imageUrl: "/Poap8.png",
+    title: "Poap 8",
+    description: "📢 ¡Episodio 8!: El rincón de la Privacidad - Invitado: Daniel",
+    url: "https://poap.gallery/drops/178849",
   },
   {
-    imageUrl: "/BWNym_logo.png",
-    title: "Gatito 9",
-    description: "Un gatito muy tierno.",
+    imageUrl: "/Poap9.png",
+    title: "Poap 9",
+    description: "📢 ¡Episodio 9!: El Rincón de la Privacidad - Invitado: Fernando Illescas",
+    url: "https://poap.gallery/drops/179311",
   },
   {
-    imageUrl: "/BWNym_logo.png",
-    title: "Gatito 10",
-    description: "Otro gatito adorable.",
+    imageUrl: "/Poap10.png",
+    title: "Poap 10",
+    description: "📢 ¡Episodio 10!: El rincón de la Privacidad - Episodio especial",
+    url: "https://poap.gallery/drops/179853",
   },
   {
-    imageUrl: "/BWNym_logo.png",
-    title: "Gatito 11",
-    description: "Un gatito juguetón.",
+    imageUrl: "/Poap11.jpeg",
+    title: "Poap 11",
+    description: "📢 ¡Episodio 11!: El rincón de la Privacidad - Actualización Magura",
+    url: "https://poap.gallery/drops/182158",
   },
   {
-    imageUrl: "/BWNym_logo.png",
-    title: "Gatito 12",
-    description: "Un gatito dormilón.",
+    imageUrl: "/Poap12.jpeg",
+    title: "Poap 12",
+    description: "📢 ¡Episodio 12!: El rincón de la Privacidad - Invitada: Erika Peralta M.",
+    url: "https://poap.gallery/drops/182607",
   },
   {
-    imageUrl: "/BWNym_logo.png",
-    title: "Gatito 13",
-    description: "Un gatito muy tierno.",
+    imageUrl: "/Poap13.jpeg",
+    title: "Poap 13",
+    description: "📢 ¡Episodio 13!: El rincón de la Privacidad - Invitada: Diana Maldonado Lasso.",
+    url: "https://poap.gallery/drops/183037",
   },
   {
-    imageUrl: "/BWNym_logo.png",
-    title: "Gatito 14",
-    description: "Otro gatito adorable.",
+    imageUrl: "/Poap14.jpeg",
+    title: "Poap 14",
+    description: "📢 ¡Episodio 14!: El rincón de la Privacidad - Invitada: NymVPN.",
+    url: "https://poap.gallery/drops/183424",
   },
-  {
-    imageUrl: "/BWNym_logo.png",
-    title: "Gatito 15",
-    description: "Proximamente...",
-  },
+
 
   // Agrega más POAPs aquí
 ];
 
 const Poaps: React.FC = () => {
+  const [open, setOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const handleOpen = (imageUrl: string) => {
+    setSelectedImage(imageUrl);
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+    setSelectedImage(null);
+  };
+
   return (
     <div>
       <h1 className="text-green-400 font-bold text-4xl pt-8 pb-8 text-center">
@@ -109,6 +135,7 @@ const Poaps: React.FC = () => {
               width: { xs: "100%", sm: "48%", md: "30%", lg: "23%" },
               maxWidth: 400,
               margin: "auto",
+              cursor: "pointer",
             }}
           >
             <Card
@@ -124,11 +151,13 @@ const Poaps: React.FC = () => {
               }}
             >
               <Box sx={{ display: "flex", justifyContent: "center", p: 2 }}>
-                <Avatar
-                  alt={poap.title}
-                  src={poap.imageUrl}
-                  sx={{ width: 200, height: 200, borderRadius: "50%" }}
-                />
+                <a onClick={() => handleOpen(poap.imageUrl)}>
+                  <Avatar
+                    alt={poap.title}
+                    src={poap.imageUrl}
+                    sx={{ width: 200, height: 200, borderRadius: "50%" }}
+                  />
+                </a>
               </Box>
               <CardContent>
                 <Typography variant="h6" component="div" align="center">
@@ -141,11 +170,37 @@ const Poaps: React.FC = () => {
                 >
                   {poap.description}
                 </Typography>
+                <Box sx={{ display: "flex", justifyContent: "center", mt: 2 }}>
+                  <a href={poap.url} target="_blank" rel="noopener noreferrer">
+                    <button style={{ padding: "8px 16px", backgroundColor: "#14e76f", color: "white", border: "none", borderRadius: "4px", cursor: "pointer" }}>
+                      Ver POAP
+                    </button>
+                  </a>
+                </Box>
               </CardContent>
             </Card>
           </Box>
         ))}
       </Box>
+
+      <Modal open={open} onClose={handleClose}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100%",
+          }}
+        >
+          {selectedImage && (
+            <Image
+              src={selectedImage}
+              alt="Imagen ampliada"
+              style={{ maxWidth: "90%", maxHeight: "90%" }}
+            />
+          )}
+        </Box>
+      </Modal>
     </div>
   );
 };
