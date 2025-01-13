@@ -84,7 +84,8 @@ const Gallery = ({
         month: "long",
         year: "numeric",
       });
-    } catch {// {{edit_1}}} 
+    } catch {
+      // {{edit_1}}}
       return dateString;
     }
   };
@@ -94,7 +95,7 @@ const Gallery = ({
       <Grid container spacing={4}>
         {currentEpisodes.map((episode) => (
           <Grid item xs={12} sm={6} md={4} key={episode.id}>
-            <Card className="h-full flex flex-col hover:shadow-lg transition-all duration-300">
+            <Card className="h-full flex flex-col hover:shadow-lg transition-all duration-300 rounded-3xl">
               <Box className="relative">
                 <CardMedia
                   component="img"
