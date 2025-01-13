@@ -20,8 +20,7 @@ export default function Home() {
           {/* Componente Stats */}
           <Stats episodes={14} views={1000} guests={8} poaps={430} />
 
-        <NymVpn />
-
+          <NymVpn />
         </div>
       </main>
     </div>

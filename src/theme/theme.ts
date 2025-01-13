@@ -1,6 +1,6 @@
-import { createTheme, Theme } from '@mui/material/styles';
+import { createTheme, Theme } from "@mui/material/styles";
 
-declare module '@mui/material/styles' {
+declare module "@mui/material/styles" {
   interface CustomTheme extends Theme {
     custom: {
       primary: string;
@@ -21,17 +21,17 @@ declare module '@mui/material/styles' {
 
 const themeConfig = {
   custom: {
-    primary: '#14e76f',
-    secondary: '#14b254',
-    tertiary: '#17c865',
-    dark: '#222b2d',
+    primary: "#14e76f",
+    secondary: "#14b254",
+    tertiary: "#17c865",
+    dark: "#222b2d",
   },
 };
 
 export const lightTheme = createTheme({
   ...themeConfig,
   palette: {
-    mode: 'light',
+    mode: "light",
     primary: {
       main: themeConfig.custom.primary,
     },
@@ -39,8 +39,8 @@ export const lightTheme = createTheme({
       main: themeConfig.custom.secondary,
     },
     background: {
-      default: '#222b2d',
-      paper: '#222b2d',
+      default: "#222b2d",
+      paper: "#222b2d",
     },
   },
 });
@@ -48,7 +48,7 @@ export const lightTheme = createTheme({
 export const darkTheme = createTheme({
   ...themeConfig,
   palette: {
-    mode: 'dark',
+    mode: "dark",
     primary: {
       main: themeConfig.custom.primary,
     },
@@ -57,7 +57,7 @@ export const darkTheme = createTheme({
     },
     background: {
       default: themeConfig.custom.dark,
-      paper: '#222b2d',
+      paper: "#222b2d",
     },
   },
 });

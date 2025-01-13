@@ -92,8 +92,6 @@ export default function Hero() {
               spacing={2}
               sx={{ mt: 4, order: { xs: 4, md: 3 } }}
             >
-
-        
               <Button
                 variant="contained"
                 color="primary"
@@ -102,9 +100,7 @@ export default function Hero() {
               >
                 Ver episodios
               </Button>
-            
 
-              
               <Button
                 variant="outlined"
                 color="primary"
@@ -113,7 +109,7 @@ export default function Hero() {
               >
                 Sobre Nym
               </Button>
-    
+
               {/* ... botones existentes ... */}
             </Stack>
 

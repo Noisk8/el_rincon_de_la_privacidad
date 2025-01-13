@@ -4,19 +4,16 @@
 
 :root {
   --background: #222b2d;
-
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #222b2d;
-
   }
 }
 
-
-
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: #222b2d !important;

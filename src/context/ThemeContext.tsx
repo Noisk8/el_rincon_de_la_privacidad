@@ -1,10 +1,16 @@
 // src/context/ThemeContext.tsx
-'use client'
+"use client";
 
-import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
-import { ThemeProvider as MUIThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-import { lightTheme, darkTheme } from '../theme/theme';
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+  ReactNode,
+} from "react";
+import { ThemeProvider as MUIThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import { lightTheme, darkTheme } from "../theme/theme";
 
 type ThemeContextType = {
   isDarkMode: boolean;
@@ -23,7 +29,9 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     // Verificar el tema preferido del sistema
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
     setIsDarkMode(prefersDark);
   }, []);
 
