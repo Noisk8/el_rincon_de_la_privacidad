@@ -104,7 +104,7 @@ const Gallery = ({
                 />
                 <IconButton
                   onClick={() => setActiveVideo(episode.youtubeUrl)}
-                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white/90 hover:bg-white"
+                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white/90 hover:bg-white z-10"
                 >
                   <PlayCircle className="h-12 w-12 text-green-500" />
                 </IconButton>
@@ -112,14 +112,14 @@ const Gallery = ({
 
               <CardContent className="flex-grow flex flex-col">
                 <Typography
-                  variant="h6"
+                  variant="h4"
                   className="font-bold mb-2 line-clamp-2"
                 >
                   {episode.title}
                 </Typography>
 
                 <Typography
-                  variant="body2"
+                  variant="h6"
                   color="text.secondary"
                   className="mb-3 line-clamp-3"
                 >
@@ -139,13 +139,13 @@ const Gallery = ({
 
                 <Box className="mt-auto flex items-center justify-between text-sm text-gray-500">
                   <Typography
-                    variant="body2"
+                    variant="body1"
                     className="flex items-center gap-1"
                   >
                     <span>{episode.duration}</span>
                   </Typography>
 
-                  <Typography variant="body2">
+                  <Typography variant="body1">
                     {formatDate(episode.publishedAt)}
                   </Typography>
 
