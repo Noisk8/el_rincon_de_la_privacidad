@@ -82,7 +82,7 @@ function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ textAlign: "center" }}>
+                  <Typography sx={{ textAlign: "center", fontWeight: 'bold' }}>
                     <Link
                       href={`/${page.toLowerCase().replace(/ /g, "-")}`}
                       style={{ textDecoration: "none", color: "inherit" }}
@@ -120,7 +120,7 @@ function ResponsiveAppBar() {
               >
                 <Link
                   href={`/${page.toLowerCase().replace(/ /g, "-")}`}
-                  style={{ textDecoration: "none", color: "#222b2d" }}
+                  style={{ textDecoration: "none", color: "#222b2d", fontWeight: 'bold' }}
                 >
                   {page}
                 </Link>
