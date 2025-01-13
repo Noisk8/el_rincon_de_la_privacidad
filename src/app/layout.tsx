@@ -34,7 +34,7 @@ export default function RootLayout({
       >
         <ThemeProvider>
           <Header />
-          <div className="container mx-auto px-4">
+          <div className="w-full overflow-x-hidden">
             {children}
             <Analytics />
             <SpeedInsights />

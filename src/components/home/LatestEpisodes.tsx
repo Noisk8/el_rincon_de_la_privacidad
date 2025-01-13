@@ -2,31 +2,10 @@
 
 import YouTube from "react-youtube";
 import * as React from "react";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 
 interface LatestEpisodesProps {
   playlistId: string;
 }
-
-const card = (
-  <React.Fragment>
-    <CardContent>
-      <Typography variant="body2">
-        En esta lista de reproducción encontrarás los últimos episodios de El
-        Rincón de la Privacidad.
-        <br />
-        {'"a benevolent smile"'}
-      </Typography>
-    </CardContent>
-    <CardActions>
-      <Button size="small">Ver En Youtube</Button>
-    </CardActions>
-  </React.Fragment>
-);
 
 const LatestEpisodes = ({ playlistId }: LatestEpisodesProps) => {
   const videoOptions = {
@@ -38,16 +17,27 @@ const LatestEpisodes = ({ playlistId }: LatestEpisodesProps) => {
   };
 
   return (
-    <div className="bg-background-default p-4 ">
+    <div className="bg-background-default p-8">
       <h1 className="text-green-400 mb-4 text-4xl font-bold text-center pt-8">
         Últimos Episodios
       </h1>
-      <div className="bg-card-background p-4 rounded-lg shadow-md">
-        <Card variant="outlined">
-          <YouTube opts={videoOptions} />
-
-          {card}
-        </Card>
+      <div className="bg-card-background p-4 rounded-lg shadow-md flex justify-center">
+        <div className="w-full max-w-2xl flex flex-col">
+          <div className="overflow-hidden">
+            <YouTube opts={videoOptions} />
+          </div>
+          <div className="p-4">
+            <p className="text-center text-xl md:text-2xl">
+              En esta lista de reproducción encontrarás los últimos episodios de El
+              Rincón de la Privacidad.
+            </p>
+          </div>
+          <div className="flex justify-end p-4">
+            <button className="bg-primary-500 hover:bg-primary-700 text-white font-bold py-2 px-4 rounded">
+              Ver en Youtube
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

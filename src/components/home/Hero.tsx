@@ -26,6 +26,9 @@ export default function Hero() {
           flexDirection={{ xs: "column", md: "row" }}
           alignItems="center"
           paddingBottom={8}
+          sx={{
+            width: "100%",
+          }}
         >
           {/* Contenedor principal que cambiará el orden en móvil */}
           <Box
@@ -64,7 +67,7 @@ export default function Hero() {
               }}
             >
               <Image
-                src="/rincon.webp"
+                src="/ER.png"
                 alt="Hero"
                 width={500}
                 height={500}
@@ -96,7 +99,7 @@ export default function Hero() {
                 variant="contained"
                 color="primary"
                 size="large"
-                href="#/episodios"
+                href="/episodios"
               >
                 Ver episodios
               </Button>
@@ -179,9 +182,9 @@ export default function Hero() {
             }}
           >
             <Image
-              src="/rincon.webp"
+              src="/ER2.png"
               alt="Hero"
-              width={500}
+              width={800}
               height={500}
               style={{ maxWidth: "100%", height: "auto" }}
             />
