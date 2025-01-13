@@ -7,6 +7,7 @@ Un espacio dedicado a discutir temas de privacidad en español, creado en colabo
 - **Framework:** Next.js 14 (App Router)
 - **Lenguaje:** TypeScript
 - **Estilos:** Tailwind CSS
+- **UI Framework:** MUI 
 - **Despliegue:** Vercel
 - **Control de Versiones:** GitHub
 
@@ -24,15 +25,13 @@ src/
 ├── app/
 │   ├── layout.tsx
 │   ├── page.tsx (Home)
-│   ├── about/
+│   ├── acerca-de/
 │   │   └── page.tsx
-│   ├── calendar/
+│   ├── calendario/
 │   │   └── page.tsx
 │   ├── poaps/
 │   │   └── page.tsx
-│   ├── team/
-│   │   └── page.tsx
-│   └── episodes/
+│   └── episodios/
 │       └── page.tsx
 ├── components/
 │   ├── layout/
