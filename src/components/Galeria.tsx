@@ -104,7 +104,7 @@ const Gallery = ({
                 />
                 <IconButton
                   onClick={() => setActiveVideo(episode.youtubeUrl)}
-                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white/90 hover:bg-white z-10"
+                  className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white/90 hover:bg-white z-10"
                 >
                   <PlayCircle className="h-12 w-12 text-green-500" />
                 </IconButton>
