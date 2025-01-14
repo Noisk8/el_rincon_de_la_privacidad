@@ -18,18 +18,23 @@ export default function Hero() {
         backgroundColor: "#222b2d",
         pt: { xs: 4, sm: 6, md: 8 },
         pb: { xs: 2, sm: 4, md: 6 },
-      }}
-    >
-      <Container maxWidth="lg">
-        <Box
-          display="flex"
-          flexDirection={{ xs: "column", md: "row" }}
-          alignItems="center"
-          paddingBottom={8}
-          sx={{
-            width: "100%",
-          }}
-        >
+      width: '100%',  // Cambiado de 80vw a 100%
+      maxWidth: '100%',  // Asegura que no exceda el ancho del contenedor padre
+      margin: '0 auto',  // Centra el Paper
+    }}
+  >
+    <Container maxWidth="lg">  
+      <Box
+        display="flex"
+        flexDirection={{ xs: "column", md: "row" }}
+        alignItems="center"
+        justifyContent="center"  // Añadido para centrar el contenido
+        paddingBottom={8}
+        sx={{
+          width: "100%",
+          px: { xs: 2, sm: 4, md: 6 },
+        }}
+      >
           {/* Contenedor principal que cambiará el orden en móvil */}
           <Box
             flex={1}
