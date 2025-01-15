@@ -151,7 +151,7 @@ const Poaps: React.FC = () => {
               }}
             >
               <Box sx={{ display: "flex", justifyContent: "center", p: 2 }}>
-                <a onClick={() => handleOpen(poap.imageUrl)}>
+                <a onClick={() => handleOpen(poap.imageUrl)} aria-label={`Ver imagen de ${poap.title}`}>
                   <Avatar
                     alt={poap.title}
                     src={poap.imageUrl}
@@ -172,7 +172,7 @@ const Poaps: React.FC = () => {
                 </Typography>
                 <Box sx={{ display: "flex", justifyContent: "center", mt: 2 }}>
                   <a href={poap.url} target="_blank" rel="noopener noreferrer">
-                    <button style={{ padding: "8px 16px", backgroundColor: "#14e76f", color: "white", border: "none", borderRadius: "4px", cursor: "pointer" }}>
+                    <button className="px-4 py-2 bg-green-500 text-white rounded cursor-pointer">
                       Ver POAP
                     </button>
                   </a>
@@ -186,17 +186,27 @@ const Poaps: React.FC = () => {
       <Modal open={open} onClose={handleClose}>
         <Box
           sx={{
+            position: "relative",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
             height: "100%",
           }}
         >
+          <button
+            onClick={handleClose}
+            aria-label="Cerrar modal"
+            className="fixed top-5 right-5 text-white text-4xl cursor-pointer"
+          >
+            &times;
+          </button>
           {selectedImage && (
             <Image
               src={selectedImage}
               alt="Imagen ampliada"
               style={{ maxWidth: "90%", maxHeight: "90%" }}
+              width={600}
+              height={600}
             />
           )}
         </Box>
