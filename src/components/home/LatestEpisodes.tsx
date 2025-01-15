@@ -1,6 +1,5 @@
 "use client";
 
-import YouTube from "react-youtube";
 import * as React from "react";
 
 interface LatestEpisodesProps {
@@ -8,13 +7,7 @@ interface LatestEpisodesProps {
 }
 
 const LatestEpisodes = ({ playlistId }: LatestEpisodesProps) => {
-  const videoOptions = {
-    playerVars: {
-      listType: "playlist",
-      list: playlistId,
-      autoplay: 0,
-    },
-  };
+  const youtubeEmbedUrl = `https://www.youtube.com/embed/videoseries?list=${playlistId}`;
 
   return (
     <div className="bg-background-default p-8">
@@ -24,7 +17,14 @@ const LatestEpisodes = ({ playlistId }: LatestEpisodesProps) => {
       <div className="bg-card-background p-4 rounded-lg shadow-md flex justify-center">
         <div className="w-full max-w-2xl flex flex-col">
           <div className="overflow-hidden">
-            <YouTube opts={videoOptions} />
+            <iframe
+              width="100%"
+              height="400"
+              src={youtubeEmbedUrl}
+              title="YouTube Playlist"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
           </div>
           <div className="p-4">
             <p className="text-center text-xl md:text-2xl">

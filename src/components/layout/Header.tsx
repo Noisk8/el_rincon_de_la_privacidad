@@ -11,7 +11,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 
 const pages = ["Acerca de", "Poaps", "Episodios"];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -94,7 +93,9 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          <Link href="/" style={{ display: 'flex', alignItems: 'center' }}>
+            <span style={{ fontSize: '2rem', marginRight: '0.25rem', color: '#222b2d', display: 'flex', alignItems: 'center' }}>🥷🏻</span>
+          </Link>
           <Typography
             variant="h5"
             noWrap
