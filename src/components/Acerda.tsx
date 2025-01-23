@@ -11,7 +11,7 @@ export default function Acerca() {
       <p className="text-green-400">
       Este espacio es desarrollado en conjunto por miembros de DaoAriwas y BWNym. Dos equipos de trabajo (squads) de la comunidad de Nym project. A través de nuestro blog podras mantenerte al día en las novedades del proyecto Nym y su NymVPN, la primera VPN verdaderamente descentralizada, potenciada por la Nym mixnet.
       </p>
-
+<br></br>
       <p className="text-green-400">  Unete a nosotros y comprueba por ti mismo que, con NymVPN, privacidad en línea sí es posible.</p>
       </div>
     </div>
