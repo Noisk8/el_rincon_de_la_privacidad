@@ -84,15 +84,17 @@ export default function Hero() {
             <Typography
               variant="h5"
               color="#17c865"
-              paragraph
+              
               sx={{
                 fontSize: { xs: "1rem", sm: "1.25rem", md: "1.5rem" },
                 order: { xs: 3, md: 2 },
               }}
             >
-              Un espacio para hablar sobre privacidad en español, generado con
-              el trabajo mutuo de los squads Build With NYM y Daoariwas.
+      Este espacio es desarrollado en conjunto por miembros de DaoAriwas y BWNym. Dos equipos de trabajo (squads) de la comunidad de Nym project.
+
+      
             </Typography>
+
 
             {/* Botones */}
             <Stack

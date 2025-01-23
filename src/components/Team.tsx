@@ -43,7 +43,7 @@ const teamMembers: TeamMember[] = [
 const Team = () => {
   return (
     <div className="container mx-auto py-8">
-      <h1 className="text-4xl font-bold text-center mb-8">Equipo</h1>
+      <h1 className="text-4xl text-green-300 font-bold text-center mb-8">Equipo</h1>
       <Box display="flex" flexWrap="wrap" justifyContent="center" gap={4}>
         {teamMembers.map((member, index) => (
           <Box key={index} width={{ xs: "100%", sm: "50%", md: "33.333%" }}>
