@@ -137,9 +137,9 @@ const episodes = [
   {
     id: '15',
     title: 'Episodio 15',
-    youtubeUrl: 'https://www.youtube.com/watch?v=u6W1rtXNfyc',
+    youtubeUrl: 'https://www.youtube.com/watch?v=HfOFGdrdLxk&t=4s',
     duration: '00:56:02',
-    description: '👨‍💻 Conversaremos sobre la NymVPN que te permite disfrutar de una navegación, transmisión y mensajería seguras con nuestra inigualable combinación de VPN descentralizada, mixnet y pagos de conocimiento-cero; además contestaremos preguntas en vivo de la comunidad e información importante y relevante en nuestras secciones de cypherpunk y noticias. En este episodio tenemos una sorpresa con una nueva sección.🎉',
+    description: '👨‍💻 Conversaremos con JJ Campuzano, futurista e Investigador independiente de tecnologías relacionadas a Blockchain desde el año 2013,',
     publishedAt: '2025-12-19',
     tags: [ 'CyberSeguridad','Nym'],
   },
