@@ -134,6 +134,24 @@ const episodes = [
     publishedAt: '2025-12-19',
     tags: [ 'CyberSeguridad','Nym'],
   },
+  {
+    id: '15',
+    title: 'Episodio 15',
+    youtubeUrl: 'https://www.youtube.com/watch?v=u6W1rtXNfyc',
+    duration: '00:56:02',
+    description: '👨‍💻 Conversaremos sobre la NymVPN que te permite disfrutar de una navegación, transmisión y mensajería seguras con nuestra inigualable combinación de VPN descentralizada, mixnet y pagos de conocimiento-cero; además contestaremos preguntas en vivo de la comunidad e información importante y relevante en nuestras secciones de cypherpunk y noticias. En este episodio tenemos una sorpresa con una nueva sección.🎉',
+    publishedAt: '2025-12-19',
+    tags: [ 'CyberSeguridad','Nym'],
+  },
+  {
+    id: '16',
+    title: 'Episodio 16',
+    youtubeUrl: 'https://www.youtube.com/watch?v=m4puIMgqt58',
+    duration: '00:56:02',
+    description: '👨‍💻 Conversaremos con Kaled, Ingeniero en ciencia de datos y matemáticas, con formación en Ciencias por el Tecnológico de Monterrey.',
+    publishedAt: '2025-02-13',
+    tags: [ 'CyberSeguridad','Nym'],
+  },
   // Agrega más episodios según sea necesario
 ];
 
