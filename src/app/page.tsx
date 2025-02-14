@@ -18,7 +18,7 @@ export default function Home() {
 
           <ClaimPoap />
           {/* Componente Stats */}
-          <Stats episodes={14} views={1000} guests={8} poaps={430} />
+          <Stats episodes={16} views={1200} guests={13} poaps={206} />
 
           <NymVpn />
         </div>

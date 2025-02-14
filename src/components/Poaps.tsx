@@ -95,7 +95,18 @@ const poaps: Poap[] = [
     description: "📢 ¡Episodio 14!: El rincón de la Privacidad - Invitada: NymVPN.",
     url: "https://poap.gallery/drops/183424",
   },
-
+  {
+    imageUrl: "/Poap14.jpeg",
+    title: "Poap 15",
+    description: "📢 ¡Episodio 15!: El rincón de la Privacidad - Invitado: JJ Campuzano",
+    url: "https://poap.gallery/drops/183424",
+  },
+  {
+    imageUrl: "/Poap14.jpeg",
+    title: "Poap 16",
+    description: "📢 ¡Episodio 16!: El rincón de la Privacidad - Invitado: Kaled",
+    url: "https://poap.gallery/drops/183424",
+  },
 
   // Agrega más POAPs aquí
 ];

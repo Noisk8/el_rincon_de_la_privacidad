@@ -140,7 +140,7 @@ const episodes = [
     youtubeUrl: 'https://www.youtube.com/watch?v=HfOFGdrdLxk&t=4s',
     duration: '00:56:02',
     description: '👨‍💻 Conversaremos con JJ Campuzano, futurista e Investigador independiente de tecnologías relacionadas a Blockchain desde el año 2013,',
-    publishedAt: '2025-12-19',
+    publishedAt: '2025-01-30',
     tags: [ 'CyberSeguridad','Nym'],
   },
   {
