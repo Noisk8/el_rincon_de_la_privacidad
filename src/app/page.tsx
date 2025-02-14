@@ -14,7 +14,7 @@ export default function Home() {
         <Hero />
         <div className="flex flex-col gap-8 items-center w-full m-8">
           {/* Componente Ultimos Episodios */}
-          <LatestEpisodes playlistId="PLoc3wV2YJYwrG7l-Qul_zKibhpmdRSMk-" />
+          <LatestEpisodes playlistId="PL64IteNHDJayiXgZUl43bsBodEBILX6iJ" />
 
           <ClaimPoap />
           {/* Componente Stats */}
