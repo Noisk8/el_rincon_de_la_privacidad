@@ -152,6 +152,15 @@ const episodes = [
     publishedAt: '2025-02-13',
     tags: [ 'CyberSeguridad','Nym'],
   },
+  {
+    id: '17',
+    title: 'Episodio 17',
+    youtubeUrl: 'https://www.youtube.com/watch?v=qIgJeV6DocA',
+    duration: '00:53:02',
+    description: '👨‍💻 Conversaremos con Paola Vazquez, experta en AI, sobre las dos caras de la moneda que tiene la inteligencia artificial, esta charla estará por mucho muy interesante; además contestaremos preguntas en vivo de la comunidad, más información importante y relevante en nuestras secciones de la Nota Legal, Cypherpunk y Noticias.',
+    publishedAt: '2025-02-27',
+    tags: [ 'CyberSeguridad','Nym'],
+  },
   // Agrega más episodios según sea necesario
 ];
 
