@@ -161,6 +161,15 @@ const episodes = [
     publishedAt: '2025-02-27',
     tags: [ 'CyberSeguridad','Nym'],
   },
+  {
+    id: '18',
+    title: 'Episodio 18',
+    youtubeUrl: 'https://www.youtube.com/watch?v=hbmUxCCiP8k',
+    duration: '01:07:13',
+    description: '👨‍💻 Conversaremos con todo el team de “El rincón de la Privacidad” e invitados especiales sobre todo lo sucedido en el evento de Lanzamiento de NymVPN que se llevó a cabo hace apenas unas horas este 13 de marzo además que comentaremos cómo lo vivieron los Squads de BWNym, DAOariwas, TupiNYMquim y NSO este icónico acontecimiento; esta charla estará llena de opiniones, emociones y mucho más; también contestaremos preguntas en vivo de la comunidad.',
+    publishedAt: '2025-03-13',
+    tags: [ 'CyberSeguridad','Nym', 'NymVPN'],
+  },
   // Agrega más episodios según sea necesario
 ];
 

@@ -136,7 +136,7 @@ export default function Footer() {
         <Typography variant="h5" color="#222b2d" align="center" sx={{ mt: 8 }}>
           {"© "}
           {new Date().getFullYear()}
-          {" El Rincón de la Privacidad. Todos los derechos reservados."}
+          {" El Rincón de la Privacidad. "}
         </Typography>
       </Container>
     </Box>

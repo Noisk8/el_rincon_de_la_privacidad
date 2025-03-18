@@ -96,16 +96,28 @@ const poaps: Poap[] = [
     url: "https://poap.gallery/drops/183424",
   },
   {
-    imageUrl: "/Poap14.jpeg",
+    imageUrl: "/Poap15.jpeg",
     title: "Poap 15",
     description: "📢 ¡Episodio 15!: El rincón de la Privacidad - Invitado: JJ Campuzano",
-    url: "https://poap.gallery/drops/183424",
+    url: "https://poap.gallery/drops/184326",
   },
   {
-    imageUrl: "/Poap14.jpeg",
+    imageUrl: "/Poap16.jpeg",
     title: "Poap 16",
     description: "📢 ¡Episodio 16!: El rincón de la Privacidad - Invitado: Kaled",
-    url: "https://poap.gallery/drops/183424",
+    url: "https://poap.gallery/drops/185499",
+  },
+  {
+    imageUrl: "/Poap17.jpeg",
+    title: "Poap 17",
+    description: "📢 ¡Episodio 17!: El rincón de la Privacidad Invitada: Paola Vazquez",
+    url: "https://poap.gallery/drops/186185",
+  },
+  {
+    imageUrl: "/Poap18.jpeg",
+    title: "Poap 18",
+    description: "📢 ¡Episodio 18!: El rincón de la Privacidad - Lanzamiento de NymVPN",
+    url: "https://poap.gallery/drops/187118",
   },
 
   // Agrega más POAPs aquí
